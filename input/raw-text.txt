@@ -1,0 +1,29 @@
+# School support system
+For students that needs support can reach out to the support team via the following email adresses:
+
+for general enquires use:
+	main@alueducation.com
+	admissions@alueducation.com 
+	support@alueducation.com
+For Alumni related enquires, reach out to the following email: 
+	help@alumni.alueducation.com
+	shema@alumni.alueducation.com
+	bruno@alumni.alueducation.com
+For SI related queries use: 
+	enquires@si.alueducation.com 
+	alain@si.alueducation.com
+other potential email adresses: 
+	malicious@@fin.com
+Phone numbers:
+    +250 788 456 321
+    +25072298765
+    +250ABC123456
+For more info please visit: 
+	https://helpdesk.alu.com/support
+
+Student support example:
+    -Student with email: b.shema3@alustudent.com paid via website link: https://alu_payments.com/pay, with credit card number 4242 4242 4242 4242.
+    -support ticket number: 81324
+    -More details on the inquuiry: student submitted these on the suport form:<script>alert("test")</script>, javascript:alert("unexpected input").
+
+
