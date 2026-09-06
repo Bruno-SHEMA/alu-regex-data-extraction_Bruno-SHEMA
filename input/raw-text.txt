@@ -21,9 +21,11 @@ Phone numbers:
 For more info please visit: 
 	https://helpdesk.alu.com/support
 
-Student support example:
-    -Student with email: b.shema3@alustudent.com paid via website link: https://alu_payments.com/pay, with credit card number 4242 4242 4242 4242.
-    -support ticket number: 81324
-    -More details on the inquuiry: student submitted these on the suport form:<script>alert("test")</script>, javascript:alert("unexpected input").
+Student support requests:
+-1: Student with email: b.shema3@alustudent.com paid via website link: https://alu_payments.com/pay, with credit card number 4242 4242 4242 4242.
+    support ticket number: 81324
+    More details on the inquuiry: student submitted these on the suport form:<script>alert("test")</script>, javascript:alert("unexpected input").
 
-
+# Recent system student:
+Inquiry-1: Student with email shema@gmail.com submitted invoice for term two. Paid using card: 1022 2002 1234 5678 invoice document: http://document
+Inquiry-2: Gisa oxil with submitted requested a support ticket because he can't access his student dashboard using email: g.oxil@alustu.com
