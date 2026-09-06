@@ -15,3 +15,38 @@ def validate_email(email):
     # first condition to check if its an official ALU email address, then return 'Valid ALU official email adress'
     if ALU_mail_pattern.fullmatch(email):
         return "Valid ALU official email Adress"
+
+
+def extract_emails(text):
+    """
+    Extracting emails from text
+    """
+    emails = regular_mail_pattern.findall(text)
+    results = []
+    for email in emails:
+        results.append({
+            "Email Address":email,
+            "Status":validate_email(email)
+        })
+    return results
+
+def main():
+    try :
+        text = file.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        print(f"File not found")
+        return
+    emails = extract_emails(text)
+    print("Email Extraction results: ")
+    print(" = " *8 )
+    print(
+          f"{'Email Adress':60}"
+          f"{" Status"}"
+    )
+    for item in emails:
+        print(
+            f"{item['Email Address']:60} "
+            f"{item['Status']}"
+        )
+if __name__ == "__main__":
+    main()
