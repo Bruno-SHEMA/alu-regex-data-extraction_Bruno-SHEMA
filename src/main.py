@@ -38,6 +38,7 @@ def validate_card(card):
     card_numbers = re.sub(r"\D", "", card)  # this to remove none-digit characters from the number
     if len(card_numbers) != 16:
         return False
+    return "**** **** **** " + card_numbers[-4:]
 
 Function for extracting all email adresses from the 'raw-text.txt' file based on the 'regular_mail_pattern' 
     # and then checking their status using the 'validate_email()' function 
