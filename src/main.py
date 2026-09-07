@@ -17,7 +17,7 @@ student_email = re.compile(r"^[a-zA-Z0-9\.\_\-]+@alustudent\.com$") # REGEX Patt
     #\d{4} equals the last four digits
 general_card_pattern = re.compile(r"\b(?:\d{4}[- ]?){3}\d{4}")
 
-Phone_number_patterb = re.compile(r"^\+250[ ]?7\d[0-9]{7}[ ]?$$")  # pattern for validating Phone numbers
+Phone_number_patterb = re.compile(r"^\+250[ ]?7[8392]\d{7}[ ]?$")  # pattern for validating Phone numbers
 
 def validate_email(email):    # Function to validate extracted emails, based on the REGEX patterns we predefined
     """
