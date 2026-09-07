@@ -80,7 +80,7 @@ def main():
     print(" = " *8 )
     print(
           f"{'Email Adress':60}"
-          f"{" Status"}"
+          f"{'  Status'}"
     )
     for item in emails:
         print(
