@@ -40,7 +40,7 @@ def validate_card(card):
         return False
     return "**** **** **** " + card_numbers[-4:]
 
-Function for extracting all email adresses from the 'raw-text.txt' file based on the 'regular_mail_pattern' 
+#Function for extracting all email adresses from the 'raw-text.txt' file based on the 'regular_mail_pattern' 
     # and then checking their status using the 'validate_email()' function 
 def extract_emails(text):
     """
