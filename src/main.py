@@ -19,6 +19,8 @@ general_card_pattern = re.compile(r"\b(?:\d{4}[- ]?){3}\d{4}")
 
 Phone_number_patterb = re.compile(r"^\+250[ ]?7[8392]\d{7}[ ]?$")  # pattern for validating Phone numbers
 
+link_pattern = re.compile(r"\b(?:https?://|www\.)[A-Za-z0-9.-_]+\.[A-Za-z]{2,}(?:/[^\s<>\"']*)?") # pattern to help extract anything that looks like URL link
+
 def validate_email(email):    # Function to validate extracted emails, based on the REGEX patterns we predefined
     """
     Validating emails
