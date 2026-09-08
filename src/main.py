@@ -109,5 +109,18 @@ def main():
             f"{card['Card Number'] :60}"
             f"{card['Status']}"
         )
+
+
+    phones = validate_phone(text)
+    print("   Phone Numbers")
+    print(
+        f"{'Phone Number':60}"
+        f"{'Status'}"
+    )
+    for phone in phones:
+        print(
+            f"{phone['Phone Number']:60}"
+            f"{phone['Status']}"
+        )
 if __name__ == "__main__":
     main()
