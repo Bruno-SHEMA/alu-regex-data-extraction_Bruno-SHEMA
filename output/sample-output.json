@@ -1,0 +1,34 @@
+# Sample output when you ran the program
+Security Check:                                             Suspecious inputs detected! 
+Email Extraction results: 
+ =  =  =  =  =  =  =  = 
+Email Adress                                                 Status
+main@alueducation.com                                        Valid ALU official email Adress
+admissions@alueducation.com                                  Valid ALU official email Adress
+support@alueducation.com                                     Valid ALU official email Adress
+help@alumni.alueducation.com                                 Valid ALUMNI email Adress
+shema@alumni.alueducation.com                                Valid ALUMNI email Adress
+bruno@alumni.alueducation.com                                Valid ALUMNI email Adress
+enquires@si.alueducation.com                                 Valid ALU SI email Adress
+alain@si.alueducation.com                                    Valid ALU SI email Adress
+b.shema3@alustudent.com                                      Valid ALU student email Adress
+shema@gmail.com                                              Invalid email address! 
+g.oxil@alustu.com                                            Invalid email address! 
+
+    Cards result
+Card Number                                                 Status
+**** **** **** 4242                                         Valid card Number
+**** **** **** 5678                                         Valid card Number
+   Phone Numbers
+Phone Number                                                Status
++250788456321                                               Valid phone format
++250-788-583-452                                            Valid phone format
++250 722 987 654                                            Valid phone format
++250ABC123456                                               Invalid phone format
+
+link results:
+link                                                        Status
+https://helpdesk.alu.com/support                            Valid link format
+https://alu_payments.com/pay                                Valid link format
+malicious@@fin.com                                          Invalid link format
+http://document                                             Invalid link format
