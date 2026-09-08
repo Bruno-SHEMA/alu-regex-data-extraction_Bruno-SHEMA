@@ -16,10 +16,16 @@ student_email = re.compile(r"^[a-zA-Z0-9\.\_\-]+@alustudent\.com$") # REGEX Patt
     #{3}: repeat thet 4 digits pattern three times
     #\d{4} equals the last four digits
 general_card_pattern = re.compile(r"\b(?:\d{4}[- ]?){3}\d{4}")
-
 Phone_number_pattern = re.compile(r"\+250(?:[ -]?\d{3}){3}")  # pattern for validating Phone numbers
+link_pattern = re.compile(r"(?:https?://|www\.)[A-Za-z0-9.-_]+\.[A-Za-z]{2,}(?:/[^\s<>\"']*)?") # pattern to help extract anything that looks like URL link
+security_pattern = re.compile(r"<script.*?>.*?</script>|javascript:", re.IGNORECASE) # regex to help identify and ignore malious inputs
 
-link_pattern = re.compile(r"\b(?:https?://|www\.)[A-Za-z0-9.-_]+\.[A-Za-z]{2,}(?:/[^\s<>\"']*)?") # pattern to help extract anything that looks like URL link
+def security_measure(text):  # function to extract and flag 
+    shits = security_pattern.findall(text)
+    if shits:
+        return "Suspecious inputs detected! "
+    else: return "Safe, No suspecious input detected"
+
 
 def validate_email(email):    # Function to validate extracted emails, based on the REGEX patterns we predefined
     """
@@ -36,7 +42,7 @@ def validate_email(email):    # Function to validate extracted emails, based on 
     #if the email adress is malicious or doesn't fit in those other categories return 'Invalid email adress!'
     return "Invalid email address! "
 
-def validate_card(card):    # function to validate card number
+def validate_card(card):  # function to validate card number
     card_numbers = re.sub(r"\D", "", card)  # this to remove none-digit characters from the number
     if len(card_numbers) != 16:
         return False
@@ -52,7 +58,6 @@ def validate_links(text):  # function to help validate all extracted links and c
         })
 
     return results
-
 #Function for extracting all email adresses from the 'raw-text.txt' file based on the 'regular_mail_pattern' 
     # and then checking their status using the 'validate_email()' function 
 def extract_emails(text):
@@ -90,19 +95,26 @@ def validate_phone(text):
         })
     return results
 
+
+
 def main():
     try :
         text = file.read_text(encoding="utf-8")  #asssigning the file contents to the text variable, to help us use it 
     except FileNotFoundError:
         print(f"File not found")
         return
-    
+    security_check =security_measure(text)
+    print (
+        f"{'Security Check: ':60}"
+        f"{security_check}"
+        )
+
     emails = extract_emails(text) # assign extracted emails that match our regex patterns to the 'emails' variable so that we can print them
     print("Email Extraction results: ")
     print(" = " *8 )
     print(
           f"{'Email Adress':60}"
-          f"{'  Status'}"
+          f"{' Status'}"
     )
     for item in emails:
         print(
@@ -122,7 +134,6 @@ def main():
             f"{card['Status']}"
         )
 
-
     phones = validate_phone(text)
     print("   Phone Numbers")
     print(
@@ -133,6 +144,19 @@ def main():
         print(
             f"{phone['Phone Number']:60}"
             f"{phone['Status']}"
+        )
+    links = validate_links(text)
+
+    print("\nlink results:")
+    print(
+        f"{'link':60}"
+        f"{'Status'}"
+    )
+
+    for link in links:
+        print(
+            f"{link['link']:60}"
+            f"{link['Status']}"
         )
 if __name__ == "__main__":
     main()
