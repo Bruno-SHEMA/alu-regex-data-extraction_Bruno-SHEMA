@@ -36,12 +36,22 @@ def validate_email(email):    # Function to validate extracted emails, based on 
     #if the email adress is malicious or doesn't fit in those other categories return 'Invalid email adress!'
     return "Invalid email address! "
 
-# function to validate card number
-def validate_card(card):
+def validate_card(card):    # function to validate card number
     card_numbers = re.sub(r"\D", "", card)  # this to remove none-digit characters from the number
     if len(card_numbers) != 16:
         return False
     return "**** **** **** " + card_numbers[-4:]
+
+def validate_links(text):  # function to help validate all extracted links and check the valid ones.
+    links = link_pattern.findall(text)  # find everything with a url format and validate it based on the link_pattern
+    results = []
+    for link in links:
+        results.append({
+            "link": link,
+            "Status": "Valid link format"
+        })
+
+    return results
 
 #Function for extracting all email adresses from the 'raw-text.txt' file based on the 'regular_mail_pattern' 
     # and then checking their status using the 'validate_email()' function 
