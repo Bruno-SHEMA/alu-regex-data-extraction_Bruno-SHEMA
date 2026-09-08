@@ -1,31 +1,66 @@
-# School support system
-For students that needs support can reach out to the support team via the following email adresses:
+ALU STUDENT SUPPORT SYSTEM
 
-for general enquires use:
-	main@alueducation.com
-	admissions@alueducation.com 
-	support@alueducation.com
-For Alumni related enquires, reach out to the following email: 
-	help@alumni.alueducation.com
-	shema@alumni.alueducation.com
-	bruno@alumni.alueducation.com
-For SI related queries use: 
-	enquires@si.alueducation.com 
-	alain@si.alueducation.com
-other potential email adresses: 
-	malicious@@fin.com
-Phone numbers:
-    +250 788 456 321
-    +25072298765
-    +250ABC123456
-For more info please visit: 
-	https://helpdesk.alu.com/support
+# CONTACT DIRECTORY
 
-Student support requests:
--1: Student with email: b.shema3@alustudent.com paid via website link: https://alu_payments.com/pay, with credit card number 4242 4242 4242 4242.
-    support ticket number: 81324
-    More details on the inquuiry: student submitted these on the suport form:<script>alert("test")</script>, javascript:alert("unexpected input").
+General Student Support
+Main Support: main@alueducation.com
+Admissions: admissions@alueducation.com
+Student Support: support@alueducation.com
 
-# Recent system student:
-Inquiry-1: Student with email shema@gmail.com submitted invoice for term two. Paid using card: 1022 2002 1234 5678 invoice document: http://document
-Inquiry-2: Gisa oxil with submitted requested a support ticket because he can't access his student dashboard using email: g.oxil@alustu.com
+Alumni Support
+Help Desk: help@alumni.alueducation.com
+Alumni Services: shema@alumni.alueducation.com
+Alumni Relations: bruno@alumni.alueducation.com
+
+SI Support
+General Queries: enquires@si.alueducation.com
+SI Coordinator: alain@si.alueducation.com
+
+Other Contact Records
+malicious@@fin.com
+
+[PHONE DIRECTORY]
+
+Primary Contact Numbers
++250788456321
++250-788-583-452
++250 722 987 654
+
+Malformed Contact Record
++250ABC123456
+
+Support SYSTEM link
+
+Support Portal:     https://helpdesk.alu.com/support
+
+# STUDENT SUPPORT REQUESTS
+
+Ticket ID: SUP-081324
+Priority: HIGH
+Status: OPEN
+Submitted By: b.shema3@alustudent.com
+Submission Channel: Web Support Form
+Request:
+Student reported an issue with a payment made through the online portal.
+Payment Details:
+Payment URL: https://alu_payments.com/pay
+Payment Method: Credit Card
+Card Number: 4242 4242 4242 4242
+Additional Information:
+    Student submitted the following content through the support form:
+        <script>alert("test")</script>
+        javascript("unexpected input")
+
+Ticket ID: SUP-102201
+Submitted By: shema@gmail.com
+Request: 
+    Student submitted an invoice for Term Two and requested assistance verifying the associated payment.
+Payment Details:
+Card Number: 1022 2002 1234 5678
+Invoice Document: http://document
+
+Ticket ID: SUP-102202
+Submitted By: g.oxil@alustu.com
+Request:
+    Student reported that they are unable to access their student dashboard
+        and requested technical support.
