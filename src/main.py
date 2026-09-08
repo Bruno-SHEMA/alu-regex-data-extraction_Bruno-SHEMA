@@ -68,6 +68,16 @@ def extract_card(text):    #  Function to extract card_numbers
             })
     return results
 
+def validate_phone(text):
+    phone_numbers = Phone_number_pattern.findall(text)
+    results = []
+    for phone_number in phone_numbers:
+        results.append({
+            "Phone Number": phone_number,
+            "Status": "Valid phone format"
+        })
+    return results
+
 def main():
     try :
         text = file.read_text(encoding="utf-8")  #asssigning the file contents to the text variable, to help us use it 
